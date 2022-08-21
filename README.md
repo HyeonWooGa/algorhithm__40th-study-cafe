@@ -196,10 +196,41 @@
 | 5주차 | 22.09.19 - 22.09.25 | 6단계       | 10문제    |
 | 6주차 | 22.09.26 - 22.10.02 | 9단계       | 5문제     |
 
-### 백준에서 JavaScript(node.js)로 문제 풀이
+### 백준에서 입력과 출력
 
-- 입력값을 받을때 'fs' 모듈 혹은 'readLine' 모듈을 사용하는데 'fs' 모듈을 권장드립니다.
-- 자세한 내용은 아래 <a href="https://nyang-in.tistory.com/156" target="_blank">링크</a>에서 확인부탁드립니다.
+- 입력을 코플릿처럼 함수형으로 매개변수를 받는 것이 아니고 txt 파일을 입력받는 개념입니다.
+- 그래서 입력값을 받기위해 'fs' 모듈 혹은 'readLine' 모듈을 사용해야합니다. - 'fs' 모듈 사용을 권장드립니다.
+- 출력을 코플릿처럼 return 반환값;으로 주는 것이 아닌 console.log(반환값); 으로 출력하는 개념입니다.
+
+### fs 모듈 사용 예시
+
+![](https://velog.velcdn.com/images/hyeonwooga/post/84a9a361-d1da-4f95-a4c2-1d89446a5f55/image.png)
+
+- 예제 입력 : '1 2'가 쓰여있는 txt 파일이라고 생각하시면 됩니다.
+- 예제 출력 : 구글 크롬 개발자탭 콘솔에 찍히는 출력입니다.
+
+- 예제 코드
+
+  - 입력
+
+  ```javascript
+  const fs = require("fs"); // fs 모듈 불러오기
+  const input = fs.readFileSync("/dev/stdin").toString(); // input === '1 2';
+  ```
+
+  - 데이터 정제
+
+  ```javascript
+  const input = fs.readFileSync("/dev/stdin").toString().split(" ").map(Number); // input === [1, 2];
+  ```
+
+  - 출력
+
+  ```javascript
+  console.log(input[0] + input[1]);
+  ```
+
+fs 모듈에 대한 추가 내용은 <a href="https://nyang-in.tistory.com/156" target="_blank">🖐여기서🖐</a> 확인부탁드립니다.
 
 <hr />
 
