@@ -159,7 +159,6 @@
    - 논리
 
 2. 선형 구조 : 한 원소 뒤에 하나의 원소만이 존재하는 형태입니다.
-   ![](https://velog.velcdn.com/images/hyeonwooga/post/4bcae410-e5a4-4313-ab2a-1752adad6dc6/image.png)
 
    - 배열
    - 연결 리스트
@@ -167,7 +166,7 @@
    - 큐
 
 3. 비선형 구조 : 원소간 다대다 관계를 가지는 구조로 계층적 구조나 망형 구조를 표현하기에 적절한 형태입니다.
-   ![](https://velog.velcdn.com/images/hyeonwooga/post/edc06aad-ef59-4e7f-80c2-cea040143648/image.png)
+
    - 트리
    - 그래프
 
